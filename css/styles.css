@@ -489,6 +489,11 @@ nav a {
   height: 108px;
   text-decoration: none;
   display: flex;
+  transition: width 0.3s ease-in-out;
+}
+
+.s-services__service-wrapper:hover .s-services__hover-icon {
+  width: 90px;
 }
 
 .s-service__service-box {
