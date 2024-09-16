@@ -122,8 +122,8 @@ nav {
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  position: fixed;
-  inset: 5% 5% auto auto;
+  position: absolute;
+  inset: 50px 50px auto auto;
 }
 
 .nav__link-wrapper {
@@ -177,6 +177,46 @@ nav a {
 
 .nav__link-wrapper:hover .nav__deco-inside {
   height: 6px;
+}
+
+/*------- HERO -------*/
+
+.to-top {
+  position: fixed;
+  inset: auto 50px 50px auto;
+  z-index: 100;
+  background-color: var(--color--accent);
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* When the button is visible */
+.to-top.show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.to-top a {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+}
+
+.to-top img {
+  height: 15px;
+  width: auto;
+  margin-bottom: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.to-top:hover img {
+  transform: translateY(-2px);
 }
 
 /*------- HERO -------*/
