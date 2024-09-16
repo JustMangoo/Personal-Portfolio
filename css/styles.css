@@ -607,6 +607,10 @@ nav a {
   background-image: url("../images/www.digip.lv_summerunrest.png");
 }
 
+.project-box:hover .project-content {
+  margin-bottom: 16px;
+}
+
 .project-content {
   grid-row-gap: 10px;
   background-color: var(--color--accent);
@@ -615,7 +619,7 @@ nav a {
   justify-content: flex-end;
   align-items: center;
   width: 95%;
-  margin-bottom: 16px;
+  margin-bottom: -90px;
   margin-left: 20px;
   margin-right: 20px;
   padding: 16px 32px 20px;
@@ -623,6 +627,7 @@ nav a {
   display: flex;
   position: absolute;
   bottom: 0;
+  transition: all 0.4s ease-in-out;
 }
 
 .project-name {
@@ -710,6 +715,7 @@ nav a {
   padding-bottom: 8px;
   text-decoration: none;
   display: flex;
+  transition: all 0.2s ease-in-out;
 }
 
 .s-footer__section-link:hover {
